@@ -64,6 +64,7 @@ Acesse http://localhost:8000 para visualizar o currículo.
 
 ---
 ## 💻 Demonstração
+<img width="1440" height="894" alt="screencapture-admin-my-cv-django" src="https://github.com/user-attachments/assets/4a7d6775-793f-40f5-b844-bea6ba95b208" />
 <img width="1440" height="2884" alt="screencapture-my_cv_django" src="https://github.com/user-attachments/assets/318696e2-b6e8-41b6-9ced-5cecdc095032" />
 
 ---
