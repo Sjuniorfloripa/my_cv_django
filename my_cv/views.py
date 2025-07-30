@@ -20,4 +20,4 @@ def curriculo_view(request):
         'idiomas': idiomas,
     }
 
-    return render(request, 'curriculo.html', context)
+    return render(request, 'home.html', context)
