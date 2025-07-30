@@ -1,6 +1,6 @@
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
 ![Django](https://img.shields.io/badge/Django-5.x-green?logo=django)
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
 ![License](https://img.shields.io/badge/Licença-MIT-blue)
 
 # 🧑‍💻 Currículo Online com Django
