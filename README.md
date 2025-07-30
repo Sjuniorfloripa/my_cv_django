@@ -63,6 +63,10 @@ Acesse http://localhost:8000 para visualizar o currículo.
 * Cabeçalhos, rodapés e botões são ocultados automaticamente na versão PDF com regras de @media print.
 
 ---
+## 💻 Demonstração
+<img width="1440" height="2884" alt="screencapture-my_cv_django" src="https://github.com/user-attachments/assets/318696e2-b6e8-41b6-9ced-5cecdc095032" />
+
+---
 
 ## 📫 Contato
 
