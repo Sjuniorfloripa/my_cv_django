@@ -1,3 +1,8 @@
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![Django](https://img.shields.io/badge/Django-5.x-green?logo=django)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+![License](https://img.shields.io/badge/Licença-MIT-blue)
+
 # 🧑‍💻 Currículo Online com Django
 
 Este projeto é um **currículo digital interativo** desenvolvido com Django, que permite manter as informações profissionais sempre atualizadas através do painel administrativo (Django Admin). A aplicação exibe os dados em uma página única (One Page) com layout responsivo, modo escuro automático e um botão que gera um **PDF dinâmico** da própria página — sempre refletindo as informações mais recentes.
@@ -51,9 +56,18 @@ python manage.py runserver
 
 Acesse http://localhost:8000 para visualizar o currículo.
 
+---
 ## 🧪 Observações
 * O PDF é gerado com base no conteúdo atual da página, refletindo sempre os dados mais recentes.
 * Ideal para portfólio pessoal, profissionais freelancers ou desenvolvedores que desejam ter um currículo dinâmico e visual.
 * Cabeçalhos, rodapés e botões são ocultados automaticamente na versão PDF com regras de @media print.
 
+---
 
+## 📫 Contato
+
+| Tipo      | Informação |
+|-----------|------------|
+| 📧 Email  | [contato@silvanodiasjr.com.br](mailto:contato@silvanodiasjr.com.br) |
+| 🔗 LinkedIn | [linkedin.com/in/silvano-charão-dias-junior-99766216a](https://www.linkedin.com/in/silvano-char%C3%A3o-dias-junior-99766216a/) |
+| 🐙 GitHub | [@Sjuniorfloripa](https://github.com/Sjuniorfloripa) |
