@@ -536,39 +536,50 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">{{ dados.nome }}</h1>
-                <p class="hero-subtitle">{{ dados.cargo_atual }}</p>
-                <p class="hero-description">{{ dados.resumo_profissional }}</p>
-                
-                <div class="contact-info">
-                    <a href="mailto:{{ dados.email }}" class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span class="contact-label">Email:</span>
-                        <span>{{ dados.email }}</span>
-                    </a>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span class="contact-label">Telefone:</span>
-                        <span>{{ dados.telefone }}</span>
+            {% if dados %}
+                <div class="hero-content">
+                    <h1 class="hero-title">{{ dados.nome }}</h1>
+                    <p class="hero-subtitle">{{ dados.cargo_atual }}</p>
+                    <p class="hero-description">{{ dados.resumo_profissional }}</p>
+                    
+                    <div class="contact-info">
+                        <a href="mailto:{{ dados.email }}" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span class="contact-label">Email:</span>
+                            <span>{{ dados.email }}</span>
+                        </a>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span class="contact-label">Telefone:</span>
+                            <span>{{ dados.telefone }}</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="contact-label">Localização:</span>
+                            <span>{{ dados.cidade }}/{{ dados.estado }}</span>
+                        </div>
+                        <a href="{{ dados.linkedin }}" target="_blank" class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="contact-label">LinkedIn:</span>
+                            <span>Perfil Profissional</span>
+                        </a>
+                        <a href="{{ dados.github }}" target="_blank" class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span class="contact-label">GitHub:</span>
+                            <span>Repositórios</span>
+                        </a>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span class="contact-label">Localização:</span>
-                        <span>{{ dados.cidade }}/{{ dados.estado }}</span>
-                    </div>
-                    <a href="{{ dados.linkedin }}" target="_blank" class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <span class="contact-label">LinkedIn:</span>
-                        <span>Perfil Profissional</span>
-                    </a>
-                    <a href="{{ dados.github }}" target="_blank" class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <span class="contact-label">GitHub:</span>
-                        <span>Repositórios</span>
+                </div>
+            {% else %}
+                <div class="hero-content">
+                    <h1 class="hero-title">Sem dados disponíveis</h1>
+                    <p class="hero-subtitle">Inicie seu cadastro o quanto antes</p>
+                    <a href="http://127.0.0.1:8000/admin/" class="contact-item">
+                        <i class="fa-regular fa-address-book"></i>
+                        <span class="contact-label">AQUI:</span>
                     </a>
                 </div>
-            </div>
+            {% endif %}
         </div>
     </section>
 
