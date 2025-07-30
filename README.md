@@ -51,13 +51,9 @@ python manage.py runserver
 
 Acesse http://localhost:8000 para visualizar o currículo.
 
-## 📦 Organização do projeto
-my_cv/
-├── templates/
-│   └── curriculo.html        # Página principal
-├── static/                   # (opcional) arquivos estáticos
-├── models.py                 # Dados do currículo
-├── views.py                  # Renderiza a página
-├── admin.py                  # Interface admin customizada
-└── ...
+## 🧪 Observações
+* O PDF é gerado com base no conteúdo atual da página, refletindo sempre os dados mais recentes.
+* Ideal para portfólio pessoal, profissionais freelancers ou desenvolvedores que desejam ter um currículo dinâmico e visual.
+* Cabeçalhos, rodapés e botões são ocultados automaticamente na versão PDF com regras de @media print.
+
 
