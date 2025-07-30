@@ -48,3 +48,16 @@ python manage.py createsuperuser
 # 6. Rode o servidor
 python manage.py runserver
 ```
+
+Acesse http://localhost:8000 para visualizar o currículo.
+
+## 📦 Organização do projeto
+my_cv/
+├── templates/
+│   └── curriculo.html        # Página principal
+├── static/                   # (opcional) arquivos estáticos
+├── models.py                 # Dados do currículo
+├── views.py                  # Renderiza a página
+├── admin.py                  # Interface admin customizada
+└── ...
+
