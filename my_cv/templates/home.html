@@ -589,6 +589,7 @@
             <h2 class="section-title">
                 <i class="fas fa-briefcase me-3"></i>Experiências Profissionais
             </h2>
+            {% if experiencias %}
             {% for exp in experiencias %}
             <div class="experience-card nao-quebrar">
                 <h3 class="experience-title">{{ exp.cargo }}</h3>
@@ -600,6 +601,9 @@
                 <p>{{ exp.descricao }}</p>
             </div>
             {% endfor %}
+            {% else %}
+            <h3 class="experience-title">Sem Experiências informadas.</h3>
+            {% endif %}
         </section>
 
         <!-- Education Section -->
@@ -608,6 +612,7 @@
                 <i class="fas fa-graduation-cap me-3"></i>Formação Acadêmica
             </h2>
             <div class="row">
+                {% if formacoes %}
                 {% for f in formacoes %}
                 <div class="col-md-6 mb-3">
                     <div class="list-item-custom nao-quebrar">
@@ -620,6 +625,11 @@
                     </div>
                 </div>
                 {% endfor %}
+                {% else %}
+                <h2 class="section-title">
+                    Formação Acadêmica Não informada
+                </h2>
+                {% endif %}
             </div>
         </section>
 
@@ -628,6 +638,7 @@
             <h2 class="section-title">
                 <i class="fas fa-cogs me-3"></i>Habilidades Técnicas
             </h2>
+            {% if habilidades %}
             {% for categoria in categorias_habilidades %}
             <div class="skill-category nao-quebrar">
                 <h4 class="skill-category-title">
@@ -642,6 +653,11 @@
                 </div>
             </div>
             {% endfor %}
+            {% else %}
+            <h2 class="section-title">
+                Habilidades Técnicas não informadas.
+            </h2>
+            {% endif %}
         </section>
 
         <!-- Projects Section -->
@@ -650,6 +666,7 @@
                 <i class="fas fa-project-diagram me-3"></i>Projetos em Destaque
             </h2>
             <div class="row">
+                {% if projetos %}
                 {% for proj in projetos %}
                 <div class="col-12 mb-4">
                     <div class="project-card nao-quebrar">
@@ -684,6 +701,11 @@
                     </div>
                 </div>
                 {% endfor %}
+                {% else %}
+                <h2 class="section-title">
+                    Sem projetos informados.
+                </h2> 
+                {% endif %}
             </div>
         </section>
 
@@ -693,6 +715,7 @@
                 <i class="fas fa-language me-3"></i>Idiomas
             </h2>
             <div class="row">
+                {% if idiomas %}
                 {% for idioma in idiomas %}
                 <div class="col-md-6 mb-3">
                     <div class="list-item-custom">
@@ -703,6 +726,11 @@
                     </div>
                 </div>
                 {% endfor %}
+                {% else %}
+                <h2 class="section-title">
+                    Nenhum idioma informado
+                </h2>
+                {% endif %}
             </div>
         </section>
     </div> <!-- Fim do conteudo-curriculo -->
